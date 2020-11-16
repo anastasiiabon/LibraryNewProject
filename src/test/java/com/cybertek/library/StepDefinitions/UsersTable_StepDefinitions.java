@@ -13,8 +13,7 @@ public class UsersTable_StepDefinitions {
 
     @Then("table should have following column names:")
     public void table_should_have_following_column_names(List<String> expectedColumnNames) {
-        //System.out.println("expectedColumnNames = " + expectedColumnNames);
-        //System.out.println("expectedColumnNames.size() = " + expectedColumnNames.size());
+
         BrowserUtils.waitForVisibility(usersPage.showRecordsDropdown, 5);
 
         List<String> actualColumnNames = BrowserUtils.getElementsText(usersPage.tableHeaders);

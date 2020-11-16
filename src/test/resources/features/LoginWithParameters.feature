@@ -6,7 +6,7 @@ Feature: Login with parameters
     When I enter username "librarian49@library"
     And I enter password 'xHdfRYuD'
     And click the sign in button
-    And there should be 669 users
+    And there should be 2127 users
     Then dashboard should be displayed
 
 
